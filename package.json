@@ -4,7 +4,7 @@
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "main": "index.js",
-  "homepage": "https://your_username.github.io/your_repo_name/",
+  "homepage": " https://yuliapysarenko.github.io/goit-JShw-08/",
   "scripts": {
     "start": "parcel src/*.html --public-url /goit-JShw-08/",
     "build": "parcel build src/*.html --public-url /goit-js-hw-08/"

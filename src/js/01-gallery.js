@@ -7,12 +7,12 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 console.log(SimpleLightbox);
 
-export const galleryEl = document.querySelector(`.gallery`);
-export const galleryItemsEl = createdGalleryItemsEl(galleryItems);
-
-export const galleryDom =  galleryEl.insertAdjacentHTML(`beforeend`, galleryItemsEl);
- 
-export function createdGalleryItemsEl(galleryItems) {
+const galleryEl = document.querySelector(`.gallery`);
+const galleryItemsEl = createdGalleryItemsEl(galleryItems);
+// export const galleryDom =
+galleryEl.insertAdjacentHTML(`beforeend`, galleryItemsEl);
+  
+  function createdGalleryItemsEl(galleryItems) {
   return galleryItems
     .map(({ original, preview, description }) => {
    return `<li class="gallery__item">
@@ -29,7 +29,7 @@ export function createdGalleryItemsEl(galleryItems) {
 
 console.log(galleryItemsEl);
 
- export const lightbox = new SimpleLightbox('.gallery li a', {
+  const lightbox = new SimpleLightbox('.gallery li a', {
   captionsData: `alt`,
   captionSelector: `img`,
   captionType: 'img alt="${description}"',
